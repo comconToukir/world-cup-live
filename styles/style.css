@@ -4,8 +4,10 @@
 
 /* -----------------------------------------custom properties declaration */
 :root {
-  --bg-clr: #051821;
-  --primary-accent-clr: #266867;
+  /* --bg-clr: #051821; */
+  --bg-clr: #3d405b;
+  /* --primary-accent-clr: #266867; */
+  --primary-accent-clr: #81b29a;
   --font-clr-white: white;
 }
 
@@ -29,14 +31,14 @@ body {
   width: 85%;
   margin: 0 auto;
 }
-.red-button {
+.solid-button {
   background-color: var(--primary-accent-clr);
   color: var(--font-clr-white);
   padding: 16px 25px;
   text-decoration: none;
   border-radius: 5px;
 }
-.red-button i {
+.solid-button i {
   margin-left: 15px;
 }
 #active-button {
@@ -175,7 +177,7 @@ footer hr {
 footer a {
   font-size: 16px;
   text-decoration: none;
-  color: #B9B9B9;
+  color: var(--font-clr-white);
 }
 .footer-links {
   display: flex;
