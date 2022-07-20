@@ -33,16 +33,16 @@ body {
 }
 .solid-button {
   background-color: var(--primary-accent-clr);
-  color: var(--font-clr-white);
+  color: var(--bg-clr);
   padding: 16px 25px;
   text-decoration: none;
+  font-weight: 500;
   border-radius: 5px;
 }
 .solid-button i {
   margin-left: 15px;
 }
 #active-button {
-  color: var(--font-clr-white);
   background-color: var(--primary-accent-clr);
 }
 
