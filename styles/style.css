@@ -49,6 +49,7 @@ body {
 /* ------------------------------------------main banner styles */
 .main-banner {
   height: fit-content;
+  max-height: 777px;
   background-color: var(--bg-clr);
   color: var(--font-clr-white);
   display: flex;
@@ -79,6 +80,7 @@ body {
 }
 .main-banner img {
   width: 100%;
+  max-width: 735px;
   object-fit: contain;
   margin-left: auto;
   margin-top: auto;
