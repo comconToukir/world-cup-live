@@ -1,0 +1,29 @@
+.card {
+  height: fit-content;
+}
+.flag-content {
+  text-align: center;
+  margin: 53px 30px;
+}
+.flag-content h3, p {
+  margin: 5px 0;
+}
+.flag-content h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.flag-area p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #161616;
+}
+.flag-area {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+}
+.flag-area img {
+  width: 30%;
+}
