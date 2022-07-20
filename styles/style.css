@@ -1,0 +1,97 @@
+/* --------------------------------------------font imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400,500&display=swap');
+
+/* -------------------------------------------normalizing css */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------common styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------------------------utility classes */
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.red-button {
+  background-color: #DD0000;
+  color: white;
+  padding: 16px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.red-button i {
+  margin-left: 15px;
+}
+#active-button {
+  color: white;
+  background-color: #DD0000;
+}
+
+/* ------------------------------------------main banner styles */
+.main-banner {
+  height: 700px;
+  background-color: #161616;
+  color: white;
+  display: flex;
+  padding: 25px 100px 0px;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+.banner-content {
+  width: 50%;
+  margin: auto 0;
+}
+.banner-content h1 {
+  font-size: 70px;
+  line-height: 80px;
+  margin-top: 0;
+}
+.banner-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.banner-content a {
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.main-banner img {
+  height: 100%;
+  margin-left: auto;
+}
+
+/* -----------------------------------------blog content styles */
+.main-blog {
+  display: flex;
+  margin-top: 177px;
+}
+.three-buttons {
+  flex: 0 0 312px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 20px;
+  gap: 30px;
+  padding: 30px;
+  background-color: #161616;
+  border-radius: 10px;
+}
+.three-buttons a {
+  color: #161616;
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+  padding: 17px 39px;
+  border-radius: 10px;
+}
