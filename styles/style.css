@@ -39,17 +39,19 @@ body {
 
 /* ------------------------------------------main banner styles */
 .main-banner {
-  height: 700px;
+  height: fit-content;
   background-color: #161616;
   color: white;
   display: flex;
   padding: 25px 100px 0px;
   border-radius: 30px;
   margin-top: 50px;
+  gap: 50px;
 }
 .banner-content {
-  width: 50%;
+  width: 70%;
   margin: auto 0;
+  padding: 20px 0;
 }
 .banner-content h1 {
   font-size: 70px;
@@ -67,8 +69,10 @@ body {
   margin-top: 20px;
 }
 .main-banner img {
-  height: 100%;
+  width: 100%;
+  object-fit: contain;
   margin-left: auto;
+  margin-top: auto;
 }
 
 /* -----------------------------------------blog content styles */
@@ -138,6 +142,9 @@ body {
 .blog-info i {
   margin-right: 10px;
 }
+.view-all-button {
+  display: none;
+}
 
 /* ---------------------------------footer styles */
 footer {
@@ -167,4 +174,46 @@ footer a {
   display: flex;
   gap: 50px;
   margin-top: 50px;
+}
+
+/* ------------------------------------------Simple animation */
+
+@keyframes banner-slide {
+  from {
+    position: relative;
+    top: 80px;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes image-slide {
+  from {
+    position: relative;
+    left: 200px;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.main-banner:hover .banner-content>h1 {
+  /* animation-delay: .5s; */
+  animation: banner-slide .7s ease-in;
+}
+.main-banner:hover .banner-content>p {
+  animation: banner-slide 1s ease-in;
+}
+.main-banner:hover .banner-content>a {
+  animation: banner-slide 1.2s ease-in;
+}
+.main-banner:hover img {
+  animation: image-slide 1s ease-in;
 }

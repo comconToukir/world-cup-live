@@ -4,6 +4,7 @@
   .main-banner {
     flex-direction: column;
     padding: 10px 50px 0px;
+    border-radius: 10px;
   }
   .main-banner img {
     height: 50%;
@@ -64,6 +65,86 @@
 
 /* ---------------------------tablet media queries */
 
-/* @media screen and (min-width: 577px) and (max-width: 992px) {
-  
-} */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .main-banner {
+    padding: 0 50px 0;
+    height: fit-content;
+    padding-right: 10px;
+  }
+  .main-banner img {
+    margin-top: auto;
+  }
+  .banner-content {
+    padding: 50px 0;
+    padding-right: 10px;
+  }
+  .banner-content h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 5px;
+  }
+  .banner-content p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
+    overflow: hidden;
+    max-height: 3rem;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+  }
+  .red-button {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+
+  .main-blog {
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .three-buttons {
+    flex-direction: row;
+    flex: 0;
+    padding: 0;
+    gap: 22px;
+    background-color: white;
+  }
+  .three-buttons a {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 18px;
+    border: 1px solid rgba(232, 232, 232, 1);
+  }
+
+  .blog-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hidden-card {
+    display: none;
+  }
+  .view-all-button {
+    display: block;
+    font-size: 20px;
+    padding: 10px 30px;
+    width: fit-content;
+    margin: 20px auto 50px;
+  }
+
+  footer {
+    height: fit-content;
+    padding: 20px 0;
+  }
+  .footer-links {
+    justify-content: center;
+    width: 85%;
+    flex-wrap: wrap;
+  }
+}
