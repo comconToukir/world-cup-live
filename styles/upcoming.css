@@ -5,7 +5,8 @@
   text-align: center;
   margin: 53px 30px;
 }
-.flag-content h3, p {
+.flag-content h3,
+.flag-content p {
   margin: 5px 0;
 }
 .flag-content h3 {
